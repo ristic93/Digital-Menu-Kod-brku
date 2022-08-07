@@ -1,0 +1,234 @@
+@import 'vars';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    @media (min-width: 1000px){
+        display: none;
+    }
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    color: $secondary;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 20px 50px 0;
+        
+        @media (min-width: 320px) and (max-width: 376px) {
+            font-size: 1.8rem;
+            margin: 50px 10px 50px 0;
+        }
+        @media (min-width: 377px) and (max-width: 426px) {
+            font-size: 2.1rem;
+            margin: 50px 10px 50px 0;
+        }
+        @media (min-width: 426px) and (max-width: 501px) {
+            font-size: 2.3rem;
+            margin: 50px 20px 50px 0;
+        }
+        @media (min-width: 501px) and (max-width: 601px) {
+            font-size: 2.5rem;
+            margin: 50px 60px 50px 0;
+        }
+        @media (min-width: 601px) and (max-width: 760px) {
+           font-size: 2.7rem;
+           margin: 50px 70px 50px 0;
+        }
+        @media (min-width: 760px) and (max-width: 1000px) {
+            font-size: 3rem;
+            margin: 50px 80px 50px 0;
+        }
+}
+
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 5px;
+    color: $secondary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0;
+}
+
+h3 {
+    color: $secondary;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 4px;
+    line-height: 2;
+    @media (min-width: 320px) and (max-width: 376px) {
+        font-size: 1rem;
+    }
+    @media (min-width: 377px) and (max-width: 426px) {
+        font-size: 1rem; 
+    }
+    @media (min-width: 426px) and (max-width: 501px) {
+        font-size: 1.2rem;
+    }
+}
+
+
+h4 {
+    color: $secondary;
+    margin: 30px 0;
+    font-family: 'Abril Fatface', cursive;;
+    font-weight: 300;
+    opacity: .9;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// pizza
+
+small {
+    font-size: .8rem;
+    opacity: .5;
+    color: $lightgray;
+}
+
+
+.your-pizza {
+    text-align: center;
+    font-size: 3rem;
+    color: $secondary;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    margin: 100px 0;
+    @media (min-width: 320px) and (max-width: 376px) {
+        font-size: 1.8rem;
+        margin: 100px 0;
+    }
+    @media (min-width: 377px) and (max-width: 426px) {
+        font-size: 2.1rem;
+        margin: 100px 0;
+    }
+    @media (min-width: 426px) and (max-width: 501px) {
+        font-size: 2.3rem;
+        margin: 100px 0;
+    }
+    @media (min-width: 501px) and (max-width: 601px) {
+        font-size: 2.5rem;
+        margin: 100px 0;
+    }
+    @media (min-width: 601px) and (max-width: 760px) {
+       font-size: 2.5rem;
+       margin: 100px 0;
+    }
+    @media (min-width: 760px) and (max-width: 1000px) {
+        font-size: 3rem;
+        margin: 100px 0;
+    }
+}
+
+.middle-pizza {
+    width: 30%;
+    margin: 10px auto;
+    height: 2px;
+    border: none;
+    background-color: $lightgray;
+ }
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 60px; 
+    right: 10px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: $secondary; 
+    color: $primary; 
+    cursor: pointer; 
+    padding: 20px; 
+    border-radius: 40%; 
+    font-size: 1.2rem; 
+    opacity: .8;
+    transition: $transition;
+    @media (min-width: 320px) and (max-width: 376px) {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    @media (min-width: 377px) and (max-width: 426px) {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+    &:hover {
+        background: $primary;
+        color: $secondary;
+    }
+  }
+
+
+  #preloader{
+    background: #000 url(img/Preload_1.gif) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        color: $secondary;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-top: 300px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-family: $fontPreload;
+        @media (min-width: 320px) and (max-width: 376px) {
+            font-size: 1.2rem;
+            margin-top: 110px;
+        }
+        @media (min-width: 377px) and (max-width: 426px) {
+            font-size: 1.4rem;
+            margin-top: 130px;
+        }
+        @media (min-width: 426px) and (max-width: 501px) {
+            font-size: 1.6rem;
+            margin-top: 150px;
+        }
+        @media (min-width: 501px) and (max-width: 601px) {
+            font-size: 1.7rem;
+            margin-top: 170px;
+        }
+        @media (min-width: 601px) and (max-width: 760px) {
+            font-size: 1.9rem;
+            margin-top: 180px;
+        }
+        @media (min-width: 760px) and (max-width: 1000px) {
+            font-size: 2.1rem;
+            margin-top: 220px;
+        }
+        // &::after {
+        //     content: '';
+        //         margin: 5px auto;
+        //         width: 60%;
+        //         height: 2px;
+        //         border-radius: 5px;
+        //         background-color: $secondary;
+        //         display: block;
+        // }
+    }
+
+}
+
