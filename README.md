@@ -1,6 +1,4 @@
-Digitalni-Meni / Kod Brku
+Digital menu for a fast food bar. Made with HTML, SASS & JavaScript. 
+Made for displays like smart phones and tablets.
 
 https://www.kodbrku.rs
-
-
-Responsive website made for mobiles and tablets, so dont forget to inspect site when u want to see it.
